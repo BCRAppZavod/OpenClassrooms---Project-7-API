@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, jsonify
-import requests
+
 import pickle
 import streamlit as st
 import pandas as pd

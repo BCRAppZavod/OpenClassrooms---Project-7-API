@@ -1,3 +1,4 @@
+requests==2.7.0
 streamlit ==1.1.*
 matplotlib==3.2.1
 imbalanced-learn>=0.7.0

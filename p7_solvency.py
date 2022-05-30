@@ -15,10 +15,10 @@ st.title('Streamlit API for OpenClassrooms Project 7')
 
 #1. Loading the data:
 #DATA_PATH = "/Users/benjamincornurota/JupyterLab/OpenClassrooms/Project 7/beta_app/loaners_data_csv.txt"
-DATA_PATH = https://github.com/BCRAppZavod/OpenClassrooms---Project-7-API/blob/b113ed2607fc4eb943e8709e8405a08bee4be7ea/loaners_data_csv.txt
+DATA_PATH = "https://github.com/BCRAppZavod/OpenClassrooms---Project-7-API/blob/b113ed2607fc4eb943e8709e8405a08bee4be7ea/loaners_data_csv.txt"
 
 #1.1 Extraction with Pickle:
-loaners_data_csv_file = open("loaners_data_csv.txt", "rb")
+loaners_data_csv_file = open(DATA_PATH, "rb")
 loaners_data = pickle.load(loaners_data_csv_file)
 loaners_data_csv_file.close()
 
@@ -29,8 +29,8 @@ def load_data(nrows):
     data.dropna(inplace=True)
     return data
 
-# Load 10,000 rows of data into the dataframe.
-loaners_sample = load_data(10000)
+# Load 100,000 rows of data into the dataframe.
+loaners_sample = load_data(100000)
 loaners_sample = loaners_sample.drop(columns=['Unnamed: 0', 'WEEKDAY_APPR_PROCESS_START',
                                           'HOUR_APPR_PROCESS_START'])
 

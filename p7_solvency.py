@@ -15,7 +15,7 @@ st.title('Streamlit API for OpenClassrooms Project 7')
 
 #1. Loading the data:
 #DATA_PATH = "/Users/benjamincornurota/JupyterLab/OpenClassrooms/Project 7/beta_app/loaners_data_csv.txt"
-DATA_PATH = "https://github.com/BCRAppZavod/OpenClassrooms---Project-7-API/blob/b113ed2607fc4eb943e8709e8405a08bee4be7ea/loaners_data_csv.txt"
+DATA_PATH = "https://joinhiving.com/loaners_data_csv.txt"
 
 #1.1 Extraction with Pickle:
 loaners_data_csv_file = open(DATA_PATH, "rb")
